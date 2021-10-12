@@ -1,0 +1,501 @@
+\documentclass[11pt]{report}
+
+\usepackage[polish]{babel}
+\usepackage{csquotes}
+\DeclareQuoteAlias[]{dutch}{polish}
+\usepackage{polski}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{import}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{anyfontsize}
+\usepackage[htt]{hyphenat}
+\usepackage{xcolor}
+
+\newcommand{\prowadzacy}{prof. dr hab. inż. Vasyl Martsenyuk}
+\newcommand{\temat}{Ustalenia platformy Jupyter. Użycia biblioteki pandas w celu eksploracji i wizualizacji danych}
+\newcommand{\wariant}{1}
+\newcommand{\kierunek}{Informatyka}
+\newcommand{\stopien}{II}
+\newcommand{\tryb}{niestacjonarne}
+\newcommand{\semestr}{III}
+\newcommand{\grupa}{1}
+\newcommand{\nrLab}{1}
+\newcommand{\repozytorium}{https://github.com/prybka82-student/eksploracja_i_wizualizacja_danych}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{0 pt}%
+{\setlength{\parindent}{0pt} \raggedright \normalfont
+\bfseries\Huge\thechapter.\ #1
+\par\nobreak\vspace{40 pt}}}
+\makeatother
+
+\newcounter{zadanie}
+\newcommand{\zadanie}{
+    \refstepcounter{zadanie}
+    \filbreak\vspace*{1cm}
+    {\noindent\raggedright\Large \textbf{Zadanie~\thezadanie}}
+    \vspace{10 pt}\nopagebreak[1]
+}
+
+\begin{document}
+
+\title{Eksploracja i wizualizacja danych}
+\author{Piotr Rybka}
+\date{26.09.2021}
+
+\import{}{EiWD_title_page.tex}
+
+\chapter*{Polecenie}
+
+Zadanie dotyczy pobrania danych z pliku, tworzenia ramki danych, wykonania
+poszczególnych zadań na podstawie odpowiedniego zbioru danych:\\
+
+{
+    \raggedright\noindent\url{http://ghdx.healthdata.org/record/ihme-data/development-assistance-health-database-1990-2020}
+}
+
+\zadanie
+
+Załadować bibliotekę \texttt{pandas}.
+
+\begin{lstlisting}[language=Python]
+import pandas as pd
+\end{lstlisting}
+
+\zadanie
+
+Utworzyć ramkę danych ze słownika. 
+
+\begin{lstlisting}[language=Python]
+dane1 = {
+    "liczby": [532, 2532, 523, 2543, 235, 231, 34, 23552, 5324],
+    "kategorie": ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+}
+
+df1 = pd.DataFrame(dane1)
+df1
+\end{lstlisting}
+
+\zadanie 
+
+Zapisać ramkę danych w pliku \texttt{csv}.
+
+\begin{lstlisting}[language=Python]
+sciezka = r"C:\Users\piotr\Downloads\dane_ze_slownika.csv"
+
+df1.to_csv(sciezka, encoding="utf-8")
+\end{lstlisting}
+
+\zadanie
+
+Utworzyć ramkę danych z listy list.
+
+\begin{lstlisting}[language=Python]
+dane2 = [
+    [532, 2532, 523, 2543, 235, 231, 34, 23552, 5324],
+    ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+]
+
+df2 = pd.DataFrame(dane2)
+\end{lstlisting}
+
+\zadanie
+
+Wczytać dane z pliku \texttt{csv}.
+
+\begin{lstlisting}[language=Python]
+sciezka = r"C:\Users\piotr\Downloads\IHME_DAH_DATABASE_1990_2020_CSV_1\IHME_DAH_DATABASE_1990_2020_Y2021M09D22.CSV"
+
+df = pd.read_csv(sciezka, low_memory=False, )
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić pierwsze 10 wierszy ramki danych. 
+
+\begin{lstlisting}[language=Python]
+df.head(10)
+\end{lstlisting}
+
+\zadanie 
+
+Wyświetlić ostatnie 10 wierszy ramki danych.
+
+\begin{lstlisting}[language=Python]
+df.tail(10)
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić informacje o ramce danych.
+
+\begin{lstlisting}[language=Python]
+df.info()
+\end{lstlisting}
+
+\zadanie 
+
+Przetransponować dane w ramce danych. 
+
+\begin{lstlisting}[language=Python]
+df_transposed = df.T
+
+df_transposed.head()
+\end{lstlisting}
+
+\zadanie 
+
+Wyświetlić liczbę wierszy i kolumn zawartych w ramce danych. 
+
+\begin{lstlisting}[language=Python]
+rows, cols = df.shape
+print(f"Kolumn: {cols}")
+print(f"Wierszy: {rows}")
+\end{lstlisting}
+
+\zadanie
+
+Wyodrębnić wiersze i kolumny przy użyciu nazw i indeksów. 
+
+\begin{lstlisting}[language=Python]
+df["year"]
+
+df.year
+
+df[["year", "source", "recipient_country"]]
+
+df.loc[:, "year":"channel"] # wszystkie wiersze, kolumny od "year" do "channel" wlacznie
+
+df.iloc[0:10, 2:4] # wiersze od pierwszego do dziesiatego, kolumny od trzeciej do czwartej
+\end{lstlisting}
+
+\zadanie 
+
+Wyświetlić podstawowe informacje statystyczne o kolumnach liczbowych (liczba wartości niepowtarzalnych, średnia, odchylenie standardowe, minimum, maksimum, wartości kwartyli).
+
+\begin{lstlisting}[language=Python]
+liczbowe = df.select_dtypes(include='number')
+liczbowe.describe()
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić podstawowe informacje statystyczne o kolumnach kategoryzowanych (liczba wartości niepowtarzalnych, wartość najczęstsza, liczba wystąpień wartości najczęstszej).
+
+\begin{lstlisting}[language=Python]
+kategoryzowane = df.select_dtypes(exclude='number')
+kategoryzowane.describe()
+\end{lstlisting}
+
+\zadanie
+
+Usunięcie brakujących wartości z ramki danych.
+
+\begin{lstlisting}[language=Python]
+df.dropna(inplace=True) # inplace=True - zmodyfikowane zostana oryginalne dane
+\end{lstlisting}
+
+\zadanie
+
+Wybrać te wiersze ramki danych, które spełniają podany warunek dotyczący wybranej kolumny.
+
+\begin{lstlisting}[language=Python]
+df[df["recipient_country"] == "Poland"]
+\end{lstlisting}
+
+\zadanie
+
+Wybrać wiersze ramki danych, któe spełniają kilka warunków jednocześnie.
+
+\begin{lstlisting}[language=Python]
+df[(df["recipient_isocode"] == "POL") & (df["year"] >= 2005)]
+\end{lstlisting}
+
+\zadanie
+
+Wybrać wiersze, które zawierają w kolumnie kategoryzowanej określone słowo.
+
+\begin{lstlisting}[language=Python]
+df[df["source"]=="Japan"]
+\end{lstlisting}
+
+\zadanie
+
+Wybrać wiersze, które nie zawierają w kolumnie kategoryzowanej podanego wyrazu.
+
+\begin{lstlisting}[language=Python]
+selection = df[df["gbd_region"]!="Asia, East"]
+\end{lstlisting}
+
+\zadanie
+
+Utworzyć kolumnę na podstawie istniejącej kolumny w ramce danych.
+
+\begin{lstlisting}[language=Python]
+recipient_countries = df.recipient_country
+\end{lstlisting}
+
+\zadanie
+
+Usunąć kolumnę z ramki danych.
+
+\begin{lstlisting}[language=Python]
+df_copy = df
+df_copy.drop(["source", "channel"], axis=1, inplace=True) # usuwa kolumny "source" i "channel"
+\end{lstlisting}
+
+\zadanie
+
+Zmienić nazwę kolumny w ramce danych.
+
+\begin{lstlisting}[language=Python]
+df_copy.rename(columns={"year": "rok", "recipient_isocode": "kod_iso_odbiorcy", "recipient_country": "kraj_odbiorcy"}, inplace=True)
+\end{lstlisting}
+
+\zadanie
+
+Zapisać ramkę danych jako plik w formacie \texttt{csv}.
+
+\begin{lstlisting}[language=Python]
+sciezka = r"C:\Users\piotr\Downloads\df_copy.csv"
+df.to_csv(sciezka, encoding="utf-8")
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić średnią, maksymalną i minimalną wartość danej kolumny.
+
+\begin{lstlisting}[language=Python]
+col = df["elim_ch"]
+mean = col.mean()
+max_ = col.max()
+min_ = col.min()
+
+print(f"srednia: {mean}\nmaksimum: {max_}\nminimum: {min_}")
+\end{lstlisting}
+
+\zadanie
+
+Podać liczbę wierszy wybranej kolumny.
+
+\begin{lstlisting}[language=Python]
+df.rok.count()
+\end{lstlisting}
+
+\zadanie
+
+Wyodrębnić wartości unikatowe w kolumnie ramki danych.
+
+\begin{lstlisting}[language=Python]
+df_copy["kraj_odbiorcy"].unique()
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić liczbę rekordów spełniajacych podany warunek. 
+
+\begin{lstlisting}[language=Python]
+df_copy[df_copy["kraj_odbiorcy"]=="Turkey"].rok.count()
+\end{lstlisting}
+
+\zadanie
+
+Posortować wiersze ramki danych według wartości w wybranej kolumnie (malejąco i rosnąco).
+
+\begin{lstlisting}[language=Python]
+df_copy.sort_values(['kraj_odbiorcy'], ascending=True).head()
+
+df_copy.sort_values(['kraj_odbiorcy'], ascending=False).head()
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić wiersze zawierające 10 największych i najmniejszych wartości z wybranej kolumny.
+
+\begin{lstlisting}[language=Python]
+df.nlargest(10, 'elim_ch')[['rok', 'elim_ch']]
+
+df.nsmallest(10, 'elim_ch')[['rok', 'elim_ch']]
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić wiersze zawierające 10 największych wartości wybranej kolumny pod warunkiem, że wartości w innej kolumnie mają określoną wartość.
+
+\begin{lstlisting}[language=Python]
+df[(df['kraj_odbiorcy'].isin(['Poland', 'Germany'])) & (df['rok'] == 1990)].nlargest(10, 'elim_ch')
+\end{lstlisting}
+
+\zadanie
+
+Pogrupować wiersze według wartości kolumny kategoryzowanej, a następnie uśrednić wartości wszystkich kolumn liczbowych.
+
+\begin{lstlisting}[language=Python]
+df.groupby('kraj_odbiorcy').agg('mean')
+\end{lstlisting}
+
+\zadanie
+
+Pogrupować wiersze wg wartości kolumny kategoryzowanej, a następnie uśrednić wartości dla wybranych kolumny, a dla innych obliczyć częstość wystąpień i medianę.
+
+\begin{lstlisting}[language=Python]
+kraje = df.groupby('kraj_odbiorcy').agg({'gbd_location_id': ['mean'], 'elim_ch': ['mean'], 'prelim_est': ['mean'], 'rok': ['count', 'median'], 'wb_location_id': ['count', 'median'], 'gbd_superregion_id': ['count', 'median']})
+\end{lstlisting}
+
+\zadanie
+
+Pobrać nazwy kolumn indeksu złożonego.
+
+\begin{lstlisting}[language=Python]
+kraje.index
+\end{lstlisting}
+
+\zadanie
+
+Posortować kolumnę indeksu złożonego.
+
+\begin{lstlisting}[language=Python]
+kraje['elim_ch']['mean'].sort_values(ascending=False)
+\end{lstlisting}
+
+\zadanie
+
+Stworzyć tabelę przestawną (ang. \textit{pivot table}) na podstawie ramki danych.
+
+\begin{lstlisting}[language=Python]
+pivot = df.pivot_table(values='elim_ch', index='kraj_odbiorcy', columns='rok', aggfunc='count', margins=False, dropna=True, fill_value=None)
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić indeksy i kolumny tabeli przestawnej.
+
+\begin{lstlisting}[language=Python]
+pivot.index
+\end{lstlisting}
+
+\zadanie
+
+Utworzyć indeks złożony tabeli przestawnej i wyświetlić jego zawartość.
+
+\begin{lstlisting}[language=Python]
+pivot2 = df.pivot_table(values='elim_ch', index=['gbd_region', 'kraj_odbiorcy'], columns='rok', aggfunc='count', margins=False, dropna=True, fill_value=None)
+\end{lstlisting}
+
+\zadanie
+
+Zaimportować moduł \texttt{pyplot} z biblioteki \texttt{matplotlib} oraz wskazać, że wykresy należy rysować bezpośrednio w zeszycie, a nie w osobnej zakładce.
+
+\begin{lstlisting}[language=Python]
+import matplotlib.pyplot as plt
+
+%matplotlib inline
+\end{lstlisting}
+
+\zadanie
+
+Wyświetlić wykres na podstawie tabeli przestawnej.
+
+\begin{lstlisting}[language=Python]
+pivot3 = df.pivot_table(values='elim_ch', index='rok', columns='gbd_superregion', aggfunc='mean', margins=False, dropna=True, fill_value=None)
+
+fig = pivot3.plot(kind='line')
+plt.ylabel('mean value of elim_ch')
+plt.title('Mean values of elim_ch in superregions per year')
+plt.rcParams["figure.figsize"] = (20,10)
+\end{lstlisting}
+
+\zadanie
+
+Narysować histogram na podstawie wartości w wybranej kolumnie.
+
+\begin{lstlisting}[language=Python]
+df_bar = df.pivot_table(values='elim_ch', index='rok', columns='gbd_superregion', aggfunc='sum', margins=False, fill_value=None, dropna=True)
+df_bar.plot(kind='bar')
+plt.ylabel('elim_ch')
+plt.title('elim_ch by year and superregion')
+\end{lstlisting}
+
+\zadanie
+
+Przedstawić sposoby łączenia ramek danych za pomocą metod \texttt{merge} i \texttt{concat}.
+
+\begin{lstlisting}[language=Python]
+part1 = df[['rok', 'kraj_odbiorcy', 'elim_ch', 'gbd_region']]
+part2 = df[['rok', 'kraj_odbiorcy', 'prelim_est', 'gbd_superregion']]
+
+pd.merge(part1, part2, on = ['rok', 'kraj_odbiorcy'], how='inner').head()
+
+pd.merge(part1, part2, on = [part1.index, part2.index], how='inner').head()
+
+pd.concat([part1, part2], axis=0)
+
+pd.concat([part1, part2], axis=0).shape
+
+pd.concat([part1, part2], axis=1)
+
+pd.concat([part1, part2], axis=1).shape
+\end{lstlisting}
+
+\zadanie
+
+Pokazać dodawanie nowych kolumn za pomocą operacji matematycznych.
+
+\begin{lstlisting}[language=Python]
+df['sum'] = df['elim_ch'] + df['prelim_est']
+\end{lstlisting}
+
+\zadanie
+
+Przedstawić przykładowe dodawanie nowych kolumn przy użyciu wyrażenia lambda.
+
+\begin{lstlisting}[language=Python]
+df['years_ago'] = df['rok'].apply(lambda y: 2021 - int(y))
+\end{lstlisting}
+
+\zadanie
+
+Ukazać możliwości pracy z dużymi plikami przy użyciu argumentu \texttt{chunksize}.
+
+\begin{lstlisting}[language=Python]
+sciezka = r"C:\Users\piotr\Downloads\IHME_DAH_DATABASE_1990_2020_CSV_1\IHME_DAH_DATABASE_1990_2020_Y2021M09D22.CSV"
+
+chunks = pd.read_csv(sciezka, low_memory=False, chunksize=100_000)
+
+for i, chunk in enumerate(chunks):
+    print(f"\n\nChunk number {i+1}:")
+    print(chunk.iloc[0:3,0:4])
+\end{lstlisting}
+
+\end{document}

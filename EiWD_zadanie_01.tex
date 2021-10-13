@@ -236,7 +236,7 @@ df[df["recipient_country"] == "Poland"]
 
 \zadanie
 
-Wybrać wiersze ramki danych, któe spełniają kilka warunków jednocześnie.
+Wybrać wiersze ramki danych, które spełniają kilka warunków jednocześnie.
 
 \begin{lstlisting}[language=Python]
 df[(df["recipient_isocode"] == "POL") & (df["year"] >= 2005)]
@@ -497,5 +497,70 @@ for i, chunk in enumerate(chunks):
     print(f"\n\nChunk number {i+1}:")
     print(chunk.iloc[0:3,0:4])
 \end{lstlisting}
+
+\chapter*{Wnioski}
+
+\begin{itemize}
+    \item Załadowanie biblioteki \texttt{pandas}: \texttt{import pandas as pd}.
+    \item Tworzenie ramki danych ze słownika: \texttt{pd.DataFrame({"kol1": [], "kol2": []})}.    
+    \item Tworzenie ramki danych z listy list: \texttt{pd.DataFrame([[], [], []])}.
+    \item Wczytanie danych do ramki danych z pliku \texttt{csv}: \texttt{pd.read\_csv(sciezka, low\_memory=False)}.
+    \item Zapis danych z ramki danych do pliku \texttt{csv}: \texttt{pd.to\_csv(sciezka, encoding="utf-8")}.
+    \item Wybranie \textit{n} pierwszych lub ostatnich wierszy ramki danych:
+    \begin{itemize}
+        \item \texttt{df.head(n)};
+        \item \texttt{df.tail(n)};
+    \end{itemize}
+    \item Transponowanie danych (zamiana miejscami kolumn i wierszy): \texttt{df.T}.
+    \item Zestawienie informacji o ramce danych:
+    \begin{itemize}
+        \item \texttt{df.info()} -- spis kolumn wraz z podaniem typu i liczbą wartości niepustych (\textit{non-null});
+        \item \texttt{rows, cols = df.shape} -- liczba, odpowiednio, wierszy i kolumn;
+        \item \texttt{df.describe()} -- miary statystyczne opisujące dane;
+    \end{itemize}
+    \item Sposoby wybrania kolumny danych:
+    \begin{itemize}
+        \item \texttt{df['nazwa\_kolumny']};
+        \item \texttt{df.nazwa\_kolumny};
+        \item \texttt{df[["kolumna1", "kolumna2", "kolumna3"]]};
+        \item \texttt{df.loc[:, "kolumna1":"kolumnaX"]} -- wszystkie wiersze kolumn od 1. do $x$;
+        \item \texttt{df.iloc[:, 2:4]} -- wszystkie wiersze kolumn od 3. do 4.
+    \end{itemize}
+    \item Odfiltrowanie kolumn o wartościach liczbowych: \texttt{df.select\_dtypes(include='number')} i kategoryzowanych: \texttt{df.select\_dtypes(exclude='number')}.
+    \item Odfiltrowanie wierszy spełniających podane warunki: 
+    \begin{itemize}
+        \item \texttt{df[df["{}nazwa kolumny"] == "wartosc"]};
+        \item \texttt{df[(df["{}nazwa\_kolumny"] == "wartosc") \& (df["kolumnaX"] isin(["wart1", "wart2"])) \& (df["{}nazwa\_kolumny"{}] >= 100)]};
+    \end{itemize}
+    \item Usunięcie brakujących wartości z ramki danych: \texttt{df.dropna(inplace=True)}.
+    \item Usunięcie kolumny o wskazanych nazwach: \texttt{df.drop(["kolumna1", "kolumna2"], axis=1, inplace=True)}.
+    \item Podstawowe miary opisujące dane: 
+    \begin{itemize}
+        \item liczba wartości: \texttt{df.kolumna.count()};
+        \item średnia arytmetyczna: \texttt{df.kolumna.mean()};
+        \item maksimum: \texttt{df.kolumna.max()};
+        \item minimum: \texttt{df.kolumna.min()}.
+    \end{itemize}
+    \item Odfiltrowanie wartości niepowtarzalnych z kolumny: \texttt{df.kolumna.unique()}.
+    \item Sortowanie danych wg danych we wskazanej kolumnie: \texttt{df.sort\_values(["kolumna"], ascending=True)}.
+    \item Wyświetlenie $n$ najmniejszych i największych wartości we wskazanych kolumnach: 
+    \begin{itemize}
+        \item \texttt{df.nlargest(n, "kolumna")};
+        \item \texttt{df.nsmallest(n, "kolumna")}.
+    \end{itemize}
+    \item Grupowanie i agregowanie danych: \texttt{df.groupby("kolumna").agg('mean')}.
+    \item Indeks pogruowanych wartości: \texttt{df.index}.
+    \item Tabela przestawna z indeksem prostym: \texttt{pivot1 = df.pivot\_table(values="wartosci", index=["kol1"], columns="rok", aggfunc="count", margins=False, dropna=True, fill\_value=None)}
+    \item Załadowanie modułu \texttt{pyplot}: \texttt{import maptplotlib.pyplot as plt}. Opcja rysowania wykresów bezpośrednio w zeszycie: \texttt{\%matplotlib inline}.
+    \item Wykres na podstawie tabeli przestawnej: \texttt{df.pivot\_table(values="kol1", index="kol2", aggfunc="mean", margins=False, dropna=True, fill\_value="{}none")}
+    \item Histogram na podstawie tabeli przestawnej: \texttt{df.pivot\_table(values="kol1", index="kol2", columns\_gbd)}.
+    \item Łączenie danych: 
+    \begin{itemize}
+        \item  \texttt{merge}: \texttt{pd.merge(frame1, frame2), on=[part1.index, part2.person], how='inner'}
+        \item \texttt{concat}: \texttt{pd.concat(frame1, frame2), axis=0}
+    \end{itemize}
+    \item Dodawanie kolumn: \texttt{df["{}nowaKolumna"] = df["kol1"] + df["kol2"]}.
+    \item Podział ładowanych danych na porcje o wielkości $x$ bajtów: \texttt{pd.read\_csv(sciezka, low\_memory=False, chunksize=100\_000)}). 
+\end{itemize}
 
 \end{document}

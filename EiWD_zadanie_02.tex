@@ -1,0 +1,105 @@
+\documentclass[11pt]{report}
+
+\usepackage[polish]{babel}
+\usepackage{csquotes}
+\DeclareQuoteAlias[]{dutch}{polish}
+\usepackage{polski}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{import}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{anyfontsize}
+\usepackage[htt]{hyphenat}
+\usepackage{xcolor}
+
+\newcommand{\prowadzacy}{prof. dr hab. inż. Vasyl Martsenyuk}
+\newcommand{\temat}{Graficzna wizualizacja danych z użyciem bibliotek \enquote{matplotlib} i \enquote{seaborn}}
+\newcommand{\wariant}{1}
+\newcommand{\kierunek}{Informatyka}
+\newcommand{\stopien}{II}
+\newcommand{\tryb}{niestacjonarne}
+\newcommand{\semestr}{III}
+\newcommand{\grupa}{1}
+\newcommand{\nrLab}{2}
+\newcommand{\repozytorium}{https://github.com/prybka82-student/eksploracja_i_wizualizacja_danych}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{0 pt}%
+{\setlength{\parindent}{0pt} \raggedright \normalfont
+\bfseries\Huge\thechapter.\ #1
+\par\nobreak\vspace{40 pt}}}
+\makeatother
+
+\newcounter{zadanie}
+\newcommand{\zadanie}{
+    \refstepcounter{zadanie}
+    \filbreak\vspace*{1cm}
+    {\noindent\raggedright\Large \textbf{Zadanie~\thezadanie}}
+    \vspace{10 pt}\nopagebreak[1]
+}
+
+\begin{document}
+
+\title{Eksploracja i wizualizacja danych}
+\author{Piotr Rybka}
+\date{26.09.2021}
+
+\import{}{EiWD_title_page.tex}
+
+\chapter*{Polecenie}
+
+Zadanie dotyczy pobrania danych z pliku, tworzenia ramki danych, wykonania
+poszczególnych zadań na podstawie odpowiedniego zbioru danych:\\
+
+{
+\raggedright\noindent\url{http://ghdx.healthdata.org/record/ihme-data/development-assistance-health-database-1990-2020}
+}
+
+\zadanie
+
+Załadować bibliotekę \texttt{pandas}.
+
+\begin{lstlisting}[language=Python]
+import pandas as pd
+\end{lstlisting}
+
+
+
+\chapter*{Wnioski}
+
+\begin{itemize}
+    \item Załadowanie biblioteki \texttt{pandas}: \texttt{import pandas as pd}.
+
+\end{itemize}
+
+\end{document}

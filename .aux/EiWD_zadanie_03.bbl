@@ -1,0 +1,42 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{daneMedyczne}{misc}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{Development Assistance for Health Database 1990-2020}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://ghdx.healthdata.org/record/ihme-data/development-assistance-health-database-1990-2020
+      \endverb
+      \verb{url}
+      \verb http://ghdx.healthdata.org/record/ihme-data/development-assistance-health-database-1990-2020
+      \endverb
+      \keyw{www}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

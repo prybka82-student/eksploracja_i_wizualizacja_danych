@@ -1,0 +1,14 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'C:\Users\piotr\Documents\Semestr 3\EiWD\.aux\EiWD_zadanie_03.blg'
+[155] biber-MSWIN64:340> INFO - === 
+[200] Biber.pm:415> INFO - Reading 'C:\Users\piotr\Documents\Semestr 3\EiWD\.aux\EiWD_zadanie_03.bcf'
+[357] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[377] Biber.pm:4340> INFO - Processing section 0
+[392] Biber.pm:4531> INFO - Looking for bibtex format file 'EiWD_zadanie_03.bib' for section 0
+[452] bibtex.pm:1689> INFO - LaTeX decoding ...
+[464] bibtex.pm:1494> INFO - Found BibTeX data source 'EiWD_zadanie_03.bib'
+[511] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[511] UCollate.pm:68> INFO - Overriding locale 'pl-PL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[511] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pl-PL'
+[518] bbl.pm:654> INFO - Writing 'C:\Users\piotr\Documents\Semestr 3\EiWD\.aux\EiWD_zadanie_03.bbl' with encoding 'UTF-8'
+[518] bbl.pm:757> INFO - Output to C:\Users\piotr\Documents\Semestr 3\EiWD\.aux\EiWD_zadanie_03.bbl

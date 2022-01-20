@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.25)  21 JAN 2022 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.25)  21 JAN 2022 00:30
 entering extended mode
 **"c:/Users/piotr/Documents/Semestr 3/EiWD/EiWD_zadanie_04.tex"
 (c:/Users/piotr/Documents/Semestr 3/EiWD/EiWD_zadanie_04.tex
@@ -895,16 +895,13 @@ l.135     \item s
 File: ./EiWD_zadanie_04_wykresy//csv_reader_2.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//csv_reader_2.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//csv_reader_2.png  used on input line 143.
-(pdftex.def)             Requested size: 344.005pt x 426.88692pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+(pdftex.def)             Requested size: 258.00539pt x 320.15933pt.
 <./EiWD_zadanie_04_wykresy//csv_reader_3.png, id=50, 618.81187pt x 767.86874pt>
 File: ./EiWD_zadanie_04_wykresy//csv_reader_3.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//csv_reader_3.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//csv_reader_3.png  used on input line 151.
 (pdftex.def)             Requested size: 344.005pt x 426.88692pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -929,10 +926,11 @@ File: ./EiWD_zadanie_04_wykresy//numeric_binner_2.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//numeric_binner_2.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//numeric_binner_2.png  used on input line 186.
 (pdftex.def)             Requested size: 344.005pt x 288.00134pt.
+[3 <./EiWD_zadanie_04_wykresy//csv_reader_2.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./EiWD_zadanie_04_wykresy//numeric_binner_3.png, id=58, 170.6375pt x 99.37125pt>
+<./EiWD_zadanie_04_wykresy//numeric_binner_3.png, id=66, 170.6375pt x 99.37125pt>
 File: ./EiWD_zadanie_04_wykresy//numeric_binner_3.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//numeric_binner_3.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//numeric_binner_3.png  used on input line 194.
@@ -940,7 +938,7 @@ Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//numeric_binner_3.png  used o
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./EiWD_zadanie_04_wykresy//scatter_plot.png, id=60, 372.39125pt x 106.89937pt>
+<./EiWD_zadanie_04_wykresy//scatter_plot.png, id=68, 372.39125pt x 106.89937pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_plot.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_plot.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot.png  used on input line 204.
@@ -948,22 +946,22 @@ Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot.png  used on in
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./EiWD_zadanie_04_wykresy//scatter_plot_2.png, id=62, 395.97937pt x 277.035pt>
+<./EiWD_zadanie_04_wykresy//scatter_plot_2.png, id=70, 395.97937pt x 277.035pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_plot_2.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_plot_2.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot_2.png  used on input line 214.
 (pdftex.def)             Requested size: 116.10162pt x 81.2258pt.
-<./EiWD_zadanie_04_wykresy//scatter_plot_3.png, id=63, 540.0175pt x 186.19562pt>
+<./EiWD_zadanie_04_wykresy//scatter_plot_3.png, id=71, 540.0175pt x 186.19562pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_plot_3.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_plot_3.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot_3.png  used on input line 220.
 (pdftex.def)             Requested size: 129.00269pt x 44.47762pt.
-<./EiWD_zadanie_04_wykresy//scatter_plot_4.png, id=64, 185.69376pt x 274.52562pt>
+<./EiWD_zadanie_04_wykresy//scatter_plot_4.png, id=72, 185.69376pt x 274.52562pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_plot_4.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_plot_4.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot_4.png  used on input line 226.
 (pdftex.def)             Requested size: 77.40239pt x 114.43286pt.
-<./EiWD_zadanie_04_wykresy//scatter_plot_5.png, id=66, 541.52313pt x 489.32813pt>
+<./EiWD_zadanie_04_wykresy//scatter_plot_5.png, id=74, 541.52313pt x 489.32813pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_plot_5.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_plot_5.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot_5.png  used on input line 238.
@@ -971,17 +969,17 @@ Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_plot_5.png  used on 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./EiWD_zadanie_04_wykresy//histogram.png, id=67, 382.93062pt x 103.88812pt>
+<./EiWD_zadanie_04_wykresy//histogram.png, id=75, 382.93062pt x 103.88812pt>
 File: ./EiWD_zadanie_04_wykresy//histogram.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//histogram.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//histogram.png  used on input line 250.
 (pdftex.def)             Requested size: 193.50075pt x 52.49716pt.
-<./EiWD_zadanie_04_wykresy//histogram_2.png, id=68, 398.99063pt x 415.5525pt>
+<./EiWD_zadanie_04_wykresy//histogram_2.png, id=76, 398.99063pt x 415.5525pt>
 File: ./EiWD_zadanie_04_wykresy//histogram_2.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//histogram_2.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//histogram_2.png  used on input line 256.
 (pdftex.def)             Requested size: 193.50075pt x 201.53003pt.
-<./EiWD_zadanie_04_wykresy//histogram_3.png, id=70, 623.32875pt x 532.99126pt>
+<./EiWD_zadanie_04_wykresy//histogram_3.png, id=78, 623.32875pt x 532.99126pt>
 File: ./EiWD_zadanie_04_wykresy//histogram_3.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//histogram_3.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//histogram_3.png  used on input line 268.
@@ -989,7 +987,7 @@ Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//histogram_3.png  used on inp
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./EiWD_zadanie_04_wykresy//scatter_matrix.png, id=72, 360.34625pt x 110.4125pt>
+<./EiWD_zadanie_04_wykresy//scatter_matrix.png, id=80, 360.34625pt x 110.4125pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_matrix.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_matrix.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_matrix.png  used on input line 278.
@@ -997,31 +995,29 @@ Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_matrix.png  used on 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]
-<./EiWD_zadanie_04_wykresy//scatter_matrix_2.png, id=92, 478.78876pt x 590.205pt>
+<./EiWD_zadanie_04_wykresy//scatter_matrix_2.png, id=82, 478.78876pt x 590.205pt>
 File: ./EiWD_zadanie_04_wykresy//scatter_matrix_2.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//scatter_matrix_2.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//scatter_matrix_2.png  used on input line 286.
 (pdftex.def)             Requested size: 344.005pt x 424.0557pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] [5 <./EiWD_zadanie_04_wykresy//csv_reader_2.png>] [6 <./EiWD_zadanie_04_wykresy//csv_reader_3.png> <./EiWD_zadanie_04_wykresy//csv_reader_4.png>] [7 <./EiWD_zadanie_04_wykresy//numeric_binner.png> <./EiWD_zadanie_04_wykresy//numeric_binner_2.png> <./EiWD_zadanie_04_wykresy//numeric_binner_3.png>] [8 <./EiWD_zadanie_04_wykresy//scatter_plot.png> <./EiWD_zadanie_04_wykresy//scatter_plot_2.png> <./EiWD_zadanie_04_wykresy//scatter_plot_3.png> <./EiWD_zadanie_04_wykresy//scatter_plot_4.png>] [9 <./EiWD_zadanie_04_wykresy//scatter_plot_5.png>] [10 <./EiWD_zadanie_04_wykresy//histogram.png> <./EiWD_zadanie_04_wykresy//histogram_2.png> <./EiWD_zadanie_04_wykresy//histogram_3.png>] [11 <./EiWD_zadanie_04_wykresy//scatter_matrix.png>] [12 <./EiWD_zadanie_04_wykresy//scatter_matrix_2.png>]
-<./EiWD_zadanie_04_wykresy//przestrzen_pracy.png, id=151, 364.36125pt x 341.77687pt>
+[4] [5 <./EiWD_zadanie_04_wykresy//csv_reader_3.png> <./EiWD_zadanie_04_wykresy//csv_reader_4.png>] [6 <./EiWD_zadanie_04_wykresy//numeric_binner.png> <./EiWD_zadanie_04_wykresy//numeric_binner_2.png> <./EiWD_zadanie_04_wykresy//numeric_binner_3.png>] [7 <./EiWD_zadanie_04_wykresy//scatter_plot.png> <./EiWD_zadanie_04_wykresy//scatter_plot_2.png> <./EiWD_zadanie_04_wykresy//scatter_plot_3.png> <./EiWD_zadanie_04_wykresy//scatter_plot_4.png>] [8 <./EiWD_zadanie_04_wykresy//scatter_plot_5.png>] [9 <./EiWD_zadanie_04_wykresy//histogram.png> <./EiWD_zadanie_04_wykresy//histogram_2.png> <./EiWD_zadanie_04_wykresy//histogram_3.png>] [10 <./EiWD_zadanie_04_wykresy//scatter_matrix.png>] [11 <./EiWD_zadanie_04_wykresy//scatter_matrix_2.png>]
+<./EiWD_zadanie_04_wykresy//przestrzen_pracy.png, id=146, 364.36125pt x 341.77687pt>
 File: ./EiWD_zadanie_04_wykresy//przestrzen_pracy.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//przestrzen_pracy.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//przestrzen_pracy.png  used on input line 296.
 (pdftex.def)             Requested size: 344.005pt x 322.69402pt.
- [13
+ [12
 
  <./EiWD_zadanie_04_wykresy//przestrzen_pracy.png>]
-<./EiWD_zadanie_04_wykresy//wezly_odczytujace.png, id=162, 232.36812pt x 271.51437pt>
+<./EiWD_zadanie_04_wykresy//wezly_odczytujace.png, id=158, 232.36812pt x 271.51437pt>
 File: ./EiWD_zadanie_04_wykresy//wezly_odczytujace.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//wezly_odczytujace.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//wezly_odczytujace.png  used on input line 310.
 (pdftex.def)             Requested size: 258.00539pt x 301.5005pt.
-<./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png, id=163, 238.39063pt x 318.18875pt>
+<./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png, id=159, 238.39063pt x 318.18875pt>
 File: ./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png  used on input line 316.
@@ -1030,7 +1026,7 @@ Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png  us
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png, id=164, 242.40562pt x 316.68312pt>
+<./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png, id=160, 242.40562pt x 316.68312pt>
 File: ./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png Graphic file (type png)
 <use ./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png>
 Package pdftex.def Info: ./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png  used on input line 322.
@@ -1052,9 +1048,12 @@ Overfull \hbox (14.7944pt too wide) in paragraph at lines 332--332
 []\OT4/cmr/m/it/10.95 Development As-si-stance for He-alth Da-ta-base 1990-2020\OT4/cmr/m/n/10.95 . \OT4/cmr/m/sc/10.95 url\OT4/cmr/m/n/10.95 : []$\OT4/cmtt/l/it/10.95 http : / / ghdx . healthdata .
  []
 
-[14 <./EiWD_zadanie_04_wykresy//wezly_odczytujace.png>] [15 <./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png>] [16 <./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png>] (c:/Users\piotr\Documents\Semestr 3\EiWD\.aux\EiWD_zadanie_04.aux)
+[13 <./EiWD_zadanie_04_wykresy//wezly_odczytujace.png>] [14 <./EiWD_zadanie_04_wykresy//wezly_przetwarzajace.png>] [15 <./EiWD_zadanie_04_wykresy//wezly_wizualizujace.png>] (c:/Users\piotr\Documents\Semestr 3\EiWD\.aux\EiWD_zadanie_04.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `EiWD_zadanie_04.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1063,17 +1062,17 @@ Package logreq Info: Writing requests to 'EiWD_zadanie_04.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20926 strings out of 478864
- 360804 string characters out of 2848660
- 1109918 words of memory out of 3000000
- 38510 multiletter control sequences out of 15000+600000
+ 20923 strings out of 478864
+ 360775 string characters out of 2848660
+ 1109907 words of memory out of 3000000
+ 38508 multiletter control sequences out of 15000+600000
  416557 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,8n,77p,790b,1625s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,8n,77p,790b,1627s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plsc.enc}{C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plms.enc} <C:\Users\piotr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk>{C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}{C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}<C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plcsc10.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss12.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss17.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt10.pfb><C:/Users/piotr/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
-Output written on "c:/Users\piotr\Documents\Semestr 3\EiWD\EiWD_zadanie_04.pdf" (17 pages, 2810562 bytes).
+Output written on "c:/Users\piotr\Documents\Semestr 3\EiWD\EiWD_zadanie_04.pdf" (16 pages, 2809446 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
